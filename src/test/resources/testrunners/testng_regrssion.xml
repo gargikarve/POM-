@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Shop Cart Test automation regression suite"
+	verbose="3">
+
+	<listeners>
+		<listener
+			class-name="com.qa.opencart.testlisteners.ExtentReportListener"/>
+		<listener
+			class-name="com.qa.opencart.testlisteners.TestAllureListener"/>
+	</listeners>
+
+
+	<test name="Login page">
+		<classes>
+			<class name="com.qa.opencart.tests.LoginPageTests" />
+		</classes>
+
+	</test>
+
+	<test name="Accounts page">
+		<classes>
+			<class name="com.qa.opencart.tests.MyAccountPageTest" />
+		</classes>
+
+	</test>
+
+</suite>
+
